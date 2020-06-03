@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <meta content="" name="description">
+    <meta content="" name="author">
+
+    <title>ArchitektureLub</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/full-width-pics.css" rel="stylesheet">
+
+    <!--logic-->
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/additional-methods.js"></script>
+    <script src="js/dolacz.js"></script>
+
+    <!--    css-->
+    <link href="css/dolacz.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">ArchitektureLub</a>
+        <button aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
+                data-target="#navbarResponsive" data-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Start
+
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="quiz.html">Quiz</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="dolacz.html">Dołącz</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="galeria.html">Galeria</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="kontakt.html">Kontakt</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<!-- Content section -->
+<section class="py-5">
+    <div class="container">
+        <h1>Dołącz</h1>
+        <div id="form">
+            <div class="errorTxt"></div>
+            <form action="" class="formElement">
+
+                Imie : <input class="myInput" minlength="2" name="firstName" pattern="[A-ZĄĆĘŁŃÓŚŻŹ][a-ząćęłńóśżź]+"
+                              placeholder="np. Maciej" required title="tu wpisz imie" type="text"/>
+                <input class="myButtonSave" type="submit" value="zapisz">
+                <p class="myButtonClear" type="button">usuń</p><br/>
+                <div class="error" id="errorFirstName"></div>
+
+            </form>
+            <form action="" class="formElement">
+
+                Nazwisko : <input class="myInput" name="surname" pattern="[A-ZĄĆĘŁŃÓŚŻŹ][a-ząćęłńóśżź]+(-[A-ZĄĆĘŁŃÓŚŻŹ][a-ząćęłńóśżź]+){0,1}" placeholder="np. Kowalski"
+                                  required
+                                  title="tu wpisz nazwisko" type="text"/>
+                <input class="myButtonSave" type="submit" value="zapisz">
+                <p class="myButtonClear" type="button">usuń</p><br/>
+                <div class="error" id="errorLastName"></div>
+            </form>
+
+
+            <form action="" class="formElement">
+
+                Email : <input class="myInput" name="email" placeholder="np. kowalski@jan.pl" required
+                               title="tu wpisz email"
+                               type="email"/>
+                <input class="myButtonSave" type="submit" value="zapisz">
+                <p class="myButtonClear" type="button">usuń</p><br/>
+                <div class="error" id="errorEmail"></div>
+            </form>
+
+            <form action="" class="formElement myCheckbox">
+                Uczelnia:
+                <input class="myInput" name="university" type="checkbox" value="Pollub"/>Pollub
+                <input name="university" type="checkbox" value="UMCS"/> UMCS
+                <input name="university" type="checkbox" value="KUL"/> KUL
+                <input name="university" type="checkbox" value="inna"/> inna
+
+                <input class="myButtonSave" type="submit" value="zapisz">
+                <p class="myButtonClear" type="button">usuń</p><br/>
+                <div class="error" id="errorUniversity"></div>
+            </form>
+
+            <form action="" class="formElement myRadio">
+
+                Lokalizacja:
+                <input class="myInput" name="location" required type="radio" value="Lublin"/> Lublin
+                <input class="myInput" name="location" required type="radio" value="woj. lubelskie"/> woj. lubelskie
+                <input class="myInput" name="location" required type="radio" value="inna"/> inna
+
+                <input class="myButtonSave" type="submit" value="zapisz">
+                <p class="myButtonClear" type="button">usuń</p><br/>
+                <div class="error" id="errorLocation"></div>
+            </form>
+            <input id="myButtonSaveAll" type="submit" value="zapisz wszystkie">
+            <p id="myButtonClearAll" type="button">usuń wszystkie</p><br/>
+
+
+        </div>
+    </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="py-5 bg-dark">
+    <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; MM</p>
+    </div>
+    <!-- /.container -->
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

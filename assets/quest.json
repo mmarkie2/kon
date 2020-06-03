@@ -1,0 +1,23 @@
+[
+  {
+    "quest": "Jak nazywa się pierwsza na świecie szkoła nowoczesnego projektowania, powstała w Weimarze w 1919?",
+    "correct": "a",
+    "a": "Bauhaus",
+    "b": "Archhaus",
+    "c": "Modernhaus"
+  },
+  {
+    "quest": "Za panowania którego króla wybudowano murowany zamek królewski w Lublinie?",
+    "correct": "b",
+    "a": "Bolesława Chrobrego",
+    "b": "Kazimierza Wielkiego",
+    "c": "Zygmunt Starego "
+  },
+  {
+    "quest": "Który kraj znany jest z Panteonów?",
+    "correct": "c",
+    "a": "Anglia",
+    "b": "Niemcy",
+    "c": "Grecja"
+  }
+]

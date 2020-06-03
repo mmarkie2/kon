@@ -1,0 +1,32 @@
+#startButton {
+    align-content: center;
+    background: black;
+    border-radius: 25px;
+    /*width:200px;*/
+    /*text*/
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+
+}
+
+#startButton:hover {
+    background: #383d41;
+}
+
+footer {
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#generatedQuest, #isCorrect {
+    text-align: center;
+    background: black;
+    border-radius: 25px;
+    padding: 30px;
+    margin: 30px;
+    color: white;
+}
